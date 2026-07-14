@@ -893,7 +893,7 @@ document.getElementById('stroke-size-select').addEventListener('change', (e) => 
 
 document.getElementById('btn-eraser').addEventListener('click', () => {
   document.querySelectorAll('.color-dot').forEach(d => d.classList.remove('active'));
-  state.whiteboardColor = '#0b071a'; // Eraser matches background color
+  state.whiteboardColor = '#0a0b0d'; // Eraser matches background color
 });
 
 // --- SESSION CHAT & FILE SHARING ---

@@ -2,33 +2,33 @@
    DESIGN VARIABLES & GENERAL STYLES
    ========================================================================== */
 :root {
-  --bg-base: #070512;
-  --bg-base-gradient: radial-gradient(circle at 15% 25%, #0f0a25 0%, #070512 80%);
-  --bg-surface: rgba(22, 17, 54, 0.45);
-  --bg-surface-glass: rgba(16, 11, 41, 0.55);
-  --bg-surface-elevated: rgba(30, 24, 69, 0.7);
+  --bg-base: #0a0b0d;
+  --bg-base-gradient: radial-gradient(circle at 15% 25%, #13151a 0%, #0a0b0d 80%);
+  --bg-surface: rgba(28, 33, 43, 0.45);
+  --bg-surface-glass: rgba(20, 24, 33, 0.55);
+  --bg-surface-elevated: rgba(40, 48, 64, 0.7);
   
-  --primary: #7c3aed;
-  --primary-hover: #9061f3;
-  --primary-glow: rgba(124, 58, 237, 0.4);
-  --primary-subtle: rgba(124, 58, 237, 0.1);
+  --primary: #10b981; /* Emerald Green */
+  --primary-hover: #34d399; /* Mint Green */
+  --primary-glow: rgba(16, 185, 129, 0.35);
+  --primary-subtle: rgba(16, 185, 129, 0.08);
   
-  --secondary: #00f0ff;
-  --secondary-glow: rgba(0, 240, 255, 0.3);
-  --secondary-subtle: rgba(0, 240, 255, 0.08);
+  --secondary: #34d399; /* Mint */
+  --secondary-glow: rgba(52, 211, 153, 0.3);
+  --secondary-subtle: rgba(52, 211, 153, 0.08);
 
-  --accent: #ff007f;
-  --accent-glow: rgba(255, 0, 127, 0.35);
+  --accent: #f59e0b; /* Amber Accent */
+  --accent-glow: rgba(245, 158, 11, 0.35);
 
-  --danger: #f43f5e;
-  --danger-glow: rgba(244, 63, 94, 0.3);
-  --danger-outline: rgba(244, 63, 94, 0.5);
+  --danger: #ef4444; /* Red */
+  --danger-glow: rgba(239, 68, 68, 0.3);
+  --danger-outline: rgba(239, 68, 68, 0.5);
 
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
   --text-subtle: #64748b;
-  --border: rgba(192, 132, 252, 0.15);
-  --border-focus: rgba(0, 240, 255, 0.4);
+  --border: rgba(16, 185, 129, 0.15);
+  --border-focus: rgba(16, 185, 129, 0.4);
   
   --blur-glass: blur(16px);
   --border-radius-lg: 16px;
@@ -427,7 +427,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(9, 6, 25, 0.8);
+  background-color: rgba(10, 11, 13, 0.8);
   z-index: 10;
 }
 .room-meta {
@@ -510,7 +510,7 @@ button {
   align-items: center;
   justify-content: center;
   padding: 16px;
-  background-color: rgba(5, 3, 15, 0.95);
+  background-color: rgba(10, 11, 13, 0.95);
   overflow: hidden;
   position: relative;
 }
@@ -567,7 +567,7 @@ button {
   position: absolute;
   bottom: 12px;
   left: 12px;
-  background-color: rgba(9, 6, 25, 0.7);
+  background-color: rgba(10, 11, 13, 0.7);
   padding: 4px 10px;
   border-radius: var(--border-radius-sm);
   font-size: 11px;
@@ -594,7 +594,7 @@ button {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: rgba(9, 6, 25, 0.75);
+  background-color: rgba(10, 11, 13, 0.75);
   border: 1px solid var(--border);
   display: flex;
   align-items: center;
@@ -668,7 +668,7 @@ button {
 .whiteboard-canvas-wrapper {
   flex-grow: 1;
   position: relative;
-  background-color: #0b071a;
+  background-color: #0a0b0d;
   overflow: hidden;
 }
 #whiteboard-canvas {
@@ -797,7 +797,7 @@ button {
   align-items: center;
   gap: 10px;
   padding: 8px 12px;
-  background-color: rgba(9, 6, 25, 0.4);
+  background-color: rgba(10, 11, 13, 0.4);
   border: 1px dashed var(--border);
   border-radius: var(--border-radius-md);
   margin-top: 4px;
@@ -876,7 +876,7 @@ button {
 /* File uploading status indicator */
 .file-upload-progress {
   position: relative;
-  background-color: #0b071a;
+  background-color: #0a0b0d;
   border-top: 1px solid var(--border);
   padding: 6px 20px;
   display: flex;
@@ -900,7 +900,7 @@ button {
 .conference-controls-bar {
   height: 72px;
   border-top: 1px solid var(--border);
-  background-color: rgba(9, 6, 25, 0.95);
+  background-color: rgba(10, 11, 13, 0.95);
   display: flex;
   align-items: center;
   justify-content: space-between;
