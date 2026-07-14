@@ -1,11 +1,16 @@
 // --- API & SOCKET CONFIGURATION ---
-const API_BASE = (window.location.port === '8000')
-  ? `${window.location.protocol}//${window.location.hostname}:3000/api`
-  : '/api';
+// REPLACE THIS WITH YOUR DEPLOYED RENDER SERVER URL ONCE DEPLOYED:
+const PROD_SERVER_URL = 'https://realtime-communication-server.onrender.com';
 
-const WS_BASE = (window.location.port === '8000')
-  ? `${window.location.protocol}//${window.location.hostname}:3000`
-  : '/';
+const IS_DEV = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
+const API_BASE = IS_DEV
+  ? 'http://localhost:3000/api'
+  : `${PROD_SERVER_URL}/api`;
+
+const WS_BASE = IS_DEV
+  ? 'http://localhost:3000'
+  : PROD_SERVER_URL;
 
 const iceServersConfig = {
   iceServers: [
